@@ -14,6 +14,7 @@ public class KMP {
 		for(int i=0; i<size; i++) {                      // List의 size만큼 해당 인덱스를 출력한다
 			System.out.print(list.get(i)+1+" ");
 		}
+		sc.close();
 		
 	}
 	
