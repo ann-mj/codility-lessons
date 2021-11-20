@@ -1,11 +1,23 @@
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.Arrays;
+import java.util.HashMap;
 import java.util.StringTokenizer;
 
 public class q1157 {
     static FastReader scan = new FastReader();
-
+    
+    public static void main(String[] args) {
+        String alphabets = scan.nextLine().toLowerCase();
+        char[] listAlphabet = alphabets.toCharArray();
+        HashMap<Character,Integer> alphabetCount = new HashMap<>();
+        for(char i : listAlphabet){
+            alphabetCount.put(i, 1);
+        }
+        
+        
+    }
 
 
     static class FastReader {
@@ -24,6 +36,18 @@ public class q1157 {
             }
 
             return st.nextToken();
+        }
+
+        String nextLine() {
+            String str = "";
+
+            try {
+                str = br.readLine();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+
+            return str;
         }
     }
 }
