@@ -1,9 +1,6 @@
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.PriorityQueue;
-import java.util.concurrent.PriorityBlockingQueue;
-
-import javax.sound.sampled.DataLine.Info;
 
 public class Dijkstra {
     static int N = 10; // 정점의 갯수
